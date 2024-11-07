@@ -1,0 +1,9 @@
+## Values to be added to file in case we want to change default values of elasticsearch.
+## helm show values elastic/elasticsearch > values.yaml
+
+volumeClaimTemplate:
+  accessModes: [ "ReadWriteOnce" ]
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: gp2

@@ -1,0 +1,10 @@
+## Values to be added to file in case we want to change default values of kibana.
+## helm show values elastic/kibana > values.yaml
+
+service:
+  type: LoadBalancer
+  loadBalancerIP: ""
+  port: 5601
+  nodePort: ""
+  labels: {}
+  annotations: {}
